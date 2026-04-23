@@ -17,15 +17,13 @@ window.onload = () => {
     const savedName = localStorage.getItem("name");
     if (savedName) {
         greeting.textContent = "Welcome back, " + savedName + "!";
+        input.value = savedName;
     }
 };
 
 input.addEventListener("change", () => {
-    let name = localStorage.getItem("name");
-    if (!name) {
-        localStorage.setItem("name", input.value);
-    }
-    greeting.textContent = "Hello, " + localStorage.getItem("name") + "!";
+    localStorage.setItem("name", input.value);
+    greeting.textContent = "Hello, " + input.value + "!";
 });
 
 if ("serviceWorker" in navigator) {
