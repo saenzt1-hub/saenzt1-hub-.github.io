@@ -8,6 +8,9 @@ select.addEventListener("change", () => {
         document.body.style.backgroundImage = "url('lightgold.jpg')";
 
     }
+
+    document.body.style.backgroundSize = "cover";
+    document.body.style.backgroundSize = "no-repeat";
 });
 
 const input = document.getElementById("nameInput");
