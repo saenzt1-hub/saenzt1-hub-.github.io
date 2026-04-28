@@ -10,7 +10,7 @@ select.addEventListener("change", () => {
     }
 
     document.body.style.backgroundSize = "cover";
-    document.body.style.backgroundSize = "no-repeat";
+    document.body.style.backgroundRepeat = "no-repeat";
 });
 
 const input = document.getElementById("nameInput");
